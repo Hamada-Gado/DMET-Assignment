@@ -2,7 +2,7 @@ import cv2
 import glob
 
 frames = sorted(
-    glob.glob("15frames/*.jpg"), key=lambda x: int(x.split("/frame")[1].split(".")[0])
+    glob.glob("frames/*.jpg"), key=lambda x: int(x.split("/frame")[1].split(".")[0])
 )
 
 for i, filename in enumerate(frames):
